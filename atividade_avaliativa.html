@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube de Esportes Corinthians ⚽</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #343f49;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav {
+      background: #485058;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    section {
+      flex: 3;
+    }
+    aside {
+      flex: 1;
+      background: #e9ecef;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #343f49;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      text-align: center;
+      padding: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    input, select, button {
+      padding: 8px;
+      font-size: 1rem;
+    }
+    iframe, video, embed {
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Clube de Esportes ⚽</h1>
+    <img src="corinthians.png" 
+         alt="Escudo do time" width="120">
+  </header>
+
+  <nav>
+    <a href="#jogos">Jogos</a>
+    <a href="#cadastro">Cadastro de Sócio</a>
+    <a href="#video">Vídeo</a>
+    <a href="#regulamento">Regulamento</a>
+  </nav>
+
+  <main>
+    <section>
+      <article id="jogos">
+        <h2>Últimos 3 Jogos</h2>
+        <table>
+          <tr>
+            <th>Data</th>
+            <th>Adversário</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <td>30/08/2025</td>
+            <td>Palmeiras</td>
+            <td>Empate 1x1</td>
+          </tr>
+          <tr>
+            <td>27/08/2025</td>
+            <td>Atletico Paranaense</td>
+            <td>Vitória 1x0</td>
+          </tr>
+          <tr>
+            <td>24/08/2025</td>
+            <td>Vasco</td>
+            <td>Vitória 3x2</td>
+          </tr>
+        </table>
+      </article>
+
+      <section>
+      <article id="jogos">
+        <h2>Proximos 3 jogos</h2>
+        <table>
+          <tr>
+            <th>Data</th>
+            <th>Adversário</th>
+            <th>Campeonato</th>
+          </tr>
+          <tr>
+            <td>10/09/2025</td>
+            <td>Atletico Paranaense</td>
+            <td>Copa do Brasil</td>
+          </tr>
+          <tr>
+            <td>13/09/2025</td>
+            <td>Fluminense</td>
+            <td>Brasileirão Serie A</td>
+          </tr>
+          <tr>
+            <td>21/09/2025</td>
+            <td>Sport Recife</td>
+            <td>Brasileirão serie A</td>
+          </tr>
+        </table>
+      </article>
+
+      <article id="cadastro">
+        <h2>Cadastro de Sócio-Torcedor</h2>
+        <form>
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="plano">Plano:</label>
+          <select id="plano" name="plano">
+            <option value="bronze">Bronze</option>
+            <option value="prata">Prata</option>
+            <option value="ouro">Ouro</option>
+          </select>
+
+          <button type="submit">Enviar Cadastro</button>
+        </form>
+      </article>
+
+      <article id="video">
+        <h2>Melhores Momentos</h2>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/2kAj0njdhzo?si=CZnJFXYPQwmxz7_W" 
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen>
+        </iframe>
+      </article>
+
+      <article id="regulamento">
+        <h2>Regulamento do Campeonato Libertadores</h2>
+        <embed src="Manual-de-Clubes-CL-2025-POR-Digital.pdf" 
+               type="application/pdf" width="100%" height="400px">
+      </article>
+    </section>
+
+    <aside>
+      <h3>Notícias Rápidas</h3>
+      <p><a href="https://www.corinthians.com.br/futebol/profissional/elenco" target="_blank">Elenco para a nova temporada!</a></p>
+      <p><a href="https://www.corinthians.com.br/noticias" target="_blank">Notícias da semana.</a></p>
+      <p><a href="https://www.fieltorcedor.com.br/" target="_blank"> Fiel torcedor!.</a></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p><strong>&copy; 2025 Clube de Esportes Corinthians - Todos os direitos reservados.</strong></p>
+  </footer>
+
+</body>
+</html>
